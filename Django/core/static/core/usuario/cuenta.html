@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixelverse Games</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+      <div class="linkHeader">
+        <a href="../usuario/cuenta.html" > Registrarse</a> | <a href="../usuario/ingresar.html" > Iniciar sesión</a>
+      </div>
+      <div class="float-start"><a href="../index.html"><img src="../img/logo2.png" width="300" height="65" ></a> </div><br>
+      <a href="../product/categoria.html" class="btn btn-outline-primary">PC</a>
+      <a href="../product/categoria.html" class="btn btn-outline-primary">PlayStation</a>
+      <a href="../product/categoria.html" class="btn btn-outline-primary">Xbox</a>
+      <a href="../product/categoria.html" class="btn btn-outline-primary">Nintendo</a>
+    </header>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!--Formulario-->
+        
+        <div class="col-mb-8">
+          <div class="formulario">
+            <form action="" method="post">
+              <h4>Crea tu cuenta en Pixelverse</h4><br>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input class="form-control form-control-sm" type="text" id="nombre" name="nombre" aria-label=".form-control-sm example">
+              </div>
+              <div class="form-group">
+                <label for="Apellidos">Apellidos</label>
+                <input class="form-control form-control-sm" type="text" id="apellidos" name="apellidos" aria-label=".form-control-sm example">
+              </div>
+              <div class="form-group">
+                <label for="nameUser">Nombre de usuario</label>
+                <input class="form-control form-control-sm" type="text" id="nameUser" name="nameUser" aria-label=".form-control-sm example">
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo electronico</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" name="clave"  class="form-control" aria-describedby="passwordHelpInline" onfocusout="habilitaTxtClave()">
+                <span id="passwordHelpInline" class="form-text">
+                  La contraseña debe contener al menos un número y al menos una letra en mayúscula y debe contener entre 6 y 18 caracteres.
+                </span>
+              </div>
+              <div class="form-group">
+                <label for="repetirClave">Repetir contraseña</label>
+                <input type="password" id="repetirClave" name="repetirClave"  class="form-control" aria-describedby="passwordHelpInline" disabled onfocusout="validaClave()">
+              </div>
+              <div class="form-group">
+                <label for="fecNacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fecNacimiento" name="fecNacimiento"  class="form-control" aria-describedby="passwordHelpInline" onfocusout="validaEdad()">
+              </div>
+              <div class="form-group">
+                <label for="direccion">Dirección de despacho</label>
+                <input class="form-control form-control-sm" type="text" id="direccion" name="direccion" aria-label=".form-control-sm example">
+              </div>
+
+              <input type="button" name="btnRegistro" class="btn btn-success" onclick="validaRegistro()" value="Registrar">
+                <input type="button" name="btnLimpiar"  class="btn btn-primary" onclick="limpiar()" value="Limpiar formulario">
+                
+                <br><br><b>¿Ya tienes cuenta?  <a href="../usuario/ingresar.html" > Inicia sesión</b></a>
+
+            </form>
+          </div>
+        </div>        
+
+        
+      </div>
+    </div>  
+    
+      
+
+
+  <!--Footer-->  
+  <footer class="bg-dark text-white">
+    <div class="container  px-4 ">
+      <div class="row gx-5">
+        <div class="col">
+          <b>HORARIO DE ATENCIÓN WEB</b><br>
+          Lunes a Viernes:<br>
+          De 08:00 AM a 17:30<br>
+          Email: servicioalcliente@pixelverse.cl<br><br>
+          <b>CONTACTO</b><br>
+          Contactenos a través de Redes sociales o al mail servicioalcliente@pixelverse.cl
+        </div>
+        <div class="col">
+          Envíos a Todo Chile en 24 horas Blue Express, Chilexpress y Starken
+        </div>
+        <div class="col">
+          Paga con tarjetas de débito, credito, cuenta rut a través de Webpay o transferencias
+        </div>
+      </div>
+      <div class="text-center">
+        <p>ビデオゲームをしましょう!</p>
+        <img src="../img/iconFace.png" width="50" height="50">
+        <img src="../img/iconInsta.png" width="50" height="50">
+        <img src="../img/iconx.png" width="50" height="50">
+      </div>
+    </div>
+  </footer>
+   
+  <script>
+    function validaRegistro (){
+        
+        nombre = document.getElementById("nombre").value;
+        apellido = document.getElementById("apellidos").value;
+        nameUser = document.getElementById("nameUser").value;
+        correo = document.getElementById("correo").value;
+        clave = document.getElementById("clave").value;
+        repClave = document.getElementById("repetirClave").value;
+        fecNac = document.getElementById("fecNacimiento").value;
+        direc = document.getElementById("direccion").value;
+        
+       
+        if(nombre == "" || apellido == ""  || nameUser == ""  ||correo == ""  || clave == ""  || repClave == ""  || fecNac == ""   ){
+            alert("Favor completar todos los campos obligatorios (*)");
+        }else{
+            alert("Su cuenta " + nameUser +", ha sido registrada correctamente.");
+            limpiar();
+        }
+    }
+
+    function limpiar(){
+        document.getElementById("nombre").value = ""; 
+        document.getElementById("nombre").value = "";
+        document.getElementById("apellidos").value = "";
+        document.getElementById("nameUser").value = "";
+        document.getElementById("correo").value = "";
+        document.getElementById("clave").value = "";
+        document.getElementById("repetirClave").value = "";
+        document.getElementById("fecNacimiento").value = "";
+        document.getElementById("direccion").value = "";
+        
+    }
+
+    function formatoCorreo(){
+        var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+        
+        if( validEmail.test( jQuery('#correo').val() ) ){
+           return true;
+        }else{
+            alert("Favor ingresar formato correctamente example@algo.cl");
+            document.getElementById("correo").value = "";
+            return false;
+        }
+    }
+    
+    function habilitaTxtClave(){
+        clave = document.getElementById("clave").value ;
+        
+        
+        if (clave != ""){
+            if(clave.match(/[A-Z]/) && clave.match(/[0-9]/)){
+                if(clave.length >= 6 && clave.length <= 18 ){
+                    document.getElementById("repetirClave").disabled = false;  
+                }else{
+                    alert("La contraseña debe contener entre 6 y 18 caracteres.");
+                    document.getElementById("repetirClave").disabled = true;
+                }    
+            }else{
+                alert("La contraseña debe contener entre 6 y 18 caracteres, al menos un número, una letra en mayúscula.");
+            }
+               
+            
+        }else{
+            document.getElementById("repetirClave").disabled = true;
+        }
+        
+    }
+
+
+    function validaClave(){
+        clave = document.getElementById("clave").value ;
+        repClave = document.getElementById("repetirClave").value ;
+
+        if(clave!=repClave){
+            alert('La contraseña ingresada es distinta a la inicial. Favor de repetir correctamente');
+            document.getElementById("repetirClave").value = "";
+        }
+    }
+
+
+    function validaEdad(){
+        var fecNac = document.getElementById("fecNacimiento").value ;
+        var hoy = new Date();
+        var cumpleanos = new Date(fecNac);
+        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+        var m = hoy.getMonth() - cumpleanos.getMonth();
+
+        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+            edad--;
+        }
+
+        if(edad < 13 ){
+            alert("Edad mínima para registro es de 13 años.")
+            document.getElementById("fecNacimiento").value = "";
+        }
+
+
+    }
+</script>
+</body>
+</html>

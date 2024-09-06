@@ -1,0 +1,68 @@
+body{
+  width: 100%;
+  height: 100%;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;;
+}
+/* Estilo general del encabezado */
+header {
+  background-color: black; /* Color de fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 1rem 0; /* Espaciado interno */
+  text-align: center; /* Texto centrado */
+   /* position: fixed; */
+  width: 100%; /* Ancho completo */
+  z-index: 10; /* Asegurar que el encabezado esté por encima del contenido */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+  padding-top: 20px;
+  margin-top:20px;
+  padding-bottom:20px;
+}
+
+.headerContenido {
+  text-decoration: none;
+  
+}
+
+.linkHeader {
+  float:right;
+  margin: 10px;
+  text-decoration: none;
+  color:white;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.linkHeader a:hover {
+  color:rgb(3, 167, 58);
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.linkHeader a {
+  text-decoration: none;
+  color:white;
+  
+}
+
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(192, 200, 228);
+}
+
+.campo{
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
