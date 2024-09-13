@@ -9,3 +9,17 @@ class Categoria(models.Model):
     
     def __str__(self) :
         return self.nombreCategoria
+    
+class Cuenta(models.Model):
+    nombre = models.CharField(max_length=20)
+    apellidos = models.CharField(max_length=30)
+    nombreUsuario = models.CharField()
+    correo = models.CharField(primary_key=True)
+    clave = models.CharField(max_length=18)
+    fechaNac = models.DateField()
+    direccion = models.CharField(max_length=50)
+
+    def __str__(self) :
+        return self.cuenta
+
+       
