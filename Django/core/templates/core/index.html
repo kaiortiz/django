@@ -13,7 +13,7 @@
 <body>
     <header>
       <div class="linkHeader">
-        <a href="{% url 'cuenta'%}" > Registrarse</a> | <a href="{% static 'core/usuario/ingresar.html'%}" > Iniciar sesión</a>
+        <a href="{%  static 'core/usuario/cuenta'%}" > Registrarse</a> | <a href="{% static 'core/usuario/ingresar.html'%}" > Iniciar sesión</a>
       </div>
       <div class="float-start"><img src="{% static 'core/img/logo2.png'%}" width="300" height="65" > </div><br>
       <a href="{% static 'core/product/categoria.html'%}" class="btn btn-outline-primary">PC</a>
@@ -54,7 +54,7 @@
           <h5 class="card-title">Explora nuestras categoria y encuentra tu juego favorito</h5>
           
           {% for ctg in categoria %}
-          <a href="{% static 'categoria'%}" class="btn btn-outline-success">{{ctg.nombreCategoria}}</a>
+          <a href="{% static 'core/product/categoria.html'%}" class="btn btn-outline-success">{{ctg.nombreCategoria}}</a>
           {% endfor %}
 
         </div>
