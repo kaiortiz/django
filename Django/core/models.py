@@ -37,9 +37,9 @@ class Juegos(models.Model):
     nombreJuego = models.CharField(max_length=40)
     precio = models.IntegerField()
     stock = models.IntegerField()
-    id_categoria = models.ForeignKey(Categoria)
-    id_consola = models.ForeignKey(Consola)
-    id_proveedor = models.ForeignKey(Proveedor)
+    id_categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
+    id_consola = models.ForeignKey(Consola, on_delete=models.CASCADE)
+    id_proveedor = models.ForeignKey(Proveedor,on_delete=models.CASCADE)
     
     def __str__(self) :
         return self.nombreJuego
@@ -51,7 +51,7 @@ class Compra(models.Model):
     hora_venta = models.TimeField()
     monto_venta = models.IntegerField()
     cantidad = models.IntegerField()
-    id_juego = models.ForeignKey(Juegos)
+    id_juego = models.ForeignKey(Juegos,on_delete=models.CASCADE)
 
     def __str__(self) :
         return self.id_compra
@@ -65,7 +65,7 @@ class Cuenta(models.Model):
     clave = models.CharField(max_length=18)
     fechaNac = models.DateField()
     direccion = models.CharField(max_length=50)
-    id_compra = models.ForeignKey(Compra)
+    id_compra = models.ForeignKey(Compra,on_delete=models.CASCADE)
 
     def __str__(self) :
         return self.correo
