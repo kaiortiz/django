@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F027AB30-6327-56FC-ED9D-550618234D5C" containerWithKeyObject="CF3B0870-4728-6F41-21A1-315B7F760378" localFKIndex="C526B933-389A-F212-1F8C-077CAE9092B5" name="Juego_Categoria_FK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>8ACEAE38-C67B-D01C-BF68-0BE385FE690A</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<referredTableLongName>Categoria</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7E8945D9-728A-F056-3C25-31F2BBAD02F9</referredTableID>
+<keyObject>427FDDE4-75CE-2F98-31DD-4F9DFF10363D</keyObject>
+<referredKeyID>427FDDE4-75CE-2F98-31DD-4F9DFF10363D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_categoria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

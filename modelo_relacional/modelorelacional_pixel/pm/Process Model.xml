@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="2D7B802D-48FE-BE02-0F27-C8A5E084E470">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 00:58:04 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

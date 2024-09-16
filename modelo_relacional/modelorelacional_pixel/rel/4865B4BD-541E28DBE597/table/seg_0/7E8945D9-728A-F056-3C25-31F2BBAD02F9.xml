@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E8945D9-728A-F056-3C25-31F2BBAD02F9" name="Categoria">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>CC09A245-CC8A-B8D9-94FB-16A20A8C5DBE</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="C32C0963-D961-5F60-473D-82E1F7F463A3">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>A3A405C2-CAB1-D3E6-7ED3-C4AE9744D61A</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombreCategoria" id="6AEFEAD8-D6A4-AF35-C1DF-D3548231EE2E">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>E88EF796-9B1B-5DCE-C900-96368FF2544A</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="427FDDE4-75CE-2F98-31DD-4F9DFF10363D" name="Categoria_PK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>608EF00F-1F68-53AE-5FBE-90FE00043FFD</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C32C0963-D961-5F60-473D-82E1F7F463A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

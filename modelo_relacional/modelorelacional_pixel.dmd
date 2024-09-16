@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelorelacional_pixel" id="CD7C1217-F00C-F011-F073-118435AA581F" version="3.5">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 00:58:04 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CD7C1217-F00C-F011-F073-118435AA581F</designId>
+</OSDM_Design>

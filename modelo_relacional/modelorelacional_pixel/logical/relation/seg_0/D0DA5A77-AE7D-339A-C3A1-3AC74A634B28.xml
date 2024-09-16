@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cuenta_Compra" directorySegmentName="seg_0" id="D0DA5A77-AE7D-339A-C3A1-3AC74A634B28">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:34:10 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<sourcePk>B44A4BA2-8220-0799-8C65-45B6397503F6</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Puede tener</nameOnSource>
+<nameOnTarget>Pertenece </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9414A7D6-B89D-489F-7661-D0DBE3A82023</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F40F09E8-9E6A-85C9-B6EA-1A52711593B3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

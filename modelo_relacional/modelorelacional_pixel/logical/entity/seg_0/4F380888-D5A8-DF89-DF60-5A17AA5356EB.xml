@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F380888-D5A8-DF89-DF60-5A17AA5356EB" name="Proveedor">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:01:10 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_proveedor" id="E630E207-AC98-45A7-6EE2-827D40A4F02A">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:01:23 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombreProvedor" id="7258340D-7B76-8DA4-836A-2468CD701E8E">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:01:32 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccionProveedor" id="2350A773-1C22-C8F8-AB9D-779BEDBC9375">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:02:02 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correoProveedor" id="B11D7FAD-020F-D19B-97D1-DC6DF3AB916C">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:02:24 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numeroProveedor" id="9C4E4222-6820-18BC-9D9D-A2CB9EE7CA30">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:02:42 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AD8F7E92-6354-1780-B934-97CB1D6A4B80" name="Proveedor PK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:04:05 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E630E207-AC98-45A7-6EE2-827D40A4F02A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

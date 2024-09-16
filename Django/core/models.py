@@ -2,8 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-#FALTA: ver bien lo de las FK, porque aún no estoy seguro cómo van.
-#Los modelos están basados en la imagen que les envié por wsp.
+#SuméAgragados el archivo e imagen del modelo relacioal en la carpeta del proyecto !
 
 #MODELO PARA CATEGORIA
 class Categoria(models.Model):
@@ -12,33 +11,6 @@ class Categoria(models.Model):
     
     def __str__(self) :
         return self.nombreCategoria
-    
-#MODELO PARA CUENTAS DE USUARIO CLIENTE    
-class Cuenta(models.Model):
-    nombre = models.CharField(max_length=20)
-    apellidos = models.CharField(max_length=30)
-    nombreUsuario = models.CharField(max_length=20)
-    correo = models.CharField(primary_key=True, max_length=30)
-    clave = models.CharField(max_length=18)
-    fechaNac = models.DateField()
-    direccion = models.CharField(max_length=50)
-
-    def __str__(self) :
-        return self.correo
-
-#MODELO PARA JUEGOS
-class Juegos(models.Model):
-    id_juego = models.CharField(max_length=10)
-    nombreJuego = models.CharField(max_length=40)
-    precio = models.IntegerField()
-    stock = models.IntegerField()
-    id_categoria = models.ForeignKey(Categoria)
-    id_consola = models.ForeignKey(Consola)
-    id_proveedor = models.ForeignKey(Proveedor)
-    id_compra = models.ForeignKey(Compra)
-
-    def __str__(self) :
-        return self.nombreJuego
     
 #MODELO PROVEEDOR DE JUEGOS
 class Proveedor(models.Model):
@@ -59,6 +31,19 @@ class Consola(models.Model):
     def __str__(self) :
         return self.nombreConsola
 
+#MODELO PARA JUEGOS
+class Juegos(models.Model):
+    id_juego = models.CharField(max_length=10)
+    nombreJuego = models.CharField(max_length=40)
+    precio = models.IntegerField()
+    stock = models.IntegerField()
+    id_categoria = models.ForeignKey(Categoria)
+    id_consola = models.ForeignKey(Consola)
+    id_proveedor = models.ForeignKey(Proveedor)
+    
+    def __str__(self) :
+        return self.nombreJuego
+    
 #MODELO COMPRA (BOLETA)
 class Compra(models.Model):
     id_compra = models.CharField(primary_key=True, max_length=10)
@@ -66,9 +51,21 @@ class Compra(models.Model):
     hora_venta = models.TimeField()
     monto_venta = models.IntegerField()
     cantidad = models.IntegerField()
-    Cuenta = models.ForeignKey(Cuenta)
+    id_juego = models.ForeignKey(Juegos)
 
     def __str__(self) :
         return self.id_compra
+    
+#MODELO PARA CUENTAS DE USUARIO CLIENTE    
+class Cuenta(models.Model):
+    nombre = models.CharField(max_length=20)
+    apellidos = models.CharField(max_length=30)
+    nombreUsuario = models.CharField(max_length=20)
+    correo = models.CharField(primary_key=True, max_length=30)
+    clave = models.CharField(max_length=18)
+    fechaNac = models.DateField()
+    direccion = models.CharField(max_length=50)
+    id_compra = models.ForeignKey(Compra)
 
-       
+    def __str__(self) :
+        return self.correo

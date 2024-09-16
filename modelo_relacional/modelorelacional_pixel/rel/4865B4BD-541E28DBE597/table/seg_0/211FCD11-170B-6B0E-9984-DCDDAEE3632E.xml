@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="211FCD11-170B-6B0E-9984-DCDDAEE3632E" name="Compra">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>9414A7D6-B89D-489F-7661-D0DBE3A82023</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_compra" id="CFDE59B6-A862-E044-862E-2A8EDA108E5F">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>41EB7C7D-28B5-2FA5-EB85-BC187B0C79F7</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_venta" id="370722DB-05FD-E56B-AFD6-E1715CD367D5">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>926FE22C-6CB9-37C7-B4C1-D2D34FA1208C</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_venta" id="20B5D15B-2F45-64E4-C9A2-6B69AF00A71A">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>D7C44EE6-C362-3B94-0E40-74AE152507C0</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto_venta" id="78118C7E-0F2E-9315-8CD5-ACEA6695B158">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>0123F59D-D4CF-7755-ED9F-73B915ED6FDE</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="6A90DD0F-4C3E-1483-938F-F8A62B8002B7">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>BE388743-4EAB-7C9E-7CD0-29E513914B9D</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="4D8DE3FF-0753-4E7A-241D-EAC4EBA33363">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>B8C760F9-D905-7111-7639-007AA181F359</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_compra1" id="5D0A037B-7C25-366A-E5FC-2DEDF9E23657">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-16 02:25:29 UTC</createdTime>
+<generatorID>BA9B7418-8D7D-3E88-8F09-AC36275A304D</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Juego_id_juego" id="4A4A154F-1FA3-E8B8-AD2A-90348CDC1FD7">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-16 02:26:41 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="670D01B3-BB7E-E983-AF4C-2C7176AFA9AD" referredColumn="68BA7DAF-4F0E-662A-BDE9-04AFE8B96C87"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7674D9C9-3096-812F-7E86-B1BDA93A4A1D" name="Compra_PK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>B44A4BA2-8220-0799-8C65-45B6397503F6</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFDE59B6-A862-E044-862E-2A8EDA108E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="451AB5AF-B1C4-3F48-BDC3-6498E1534CC0" name="Compra_Juego_FK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-16 02:25:29 UTC</createdTime>
+<generatorID>E325FB53-9628-C27A-D726-865974D0BAFD</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A4A154F-1FA3-E8B8-AD2A-90348CDC1FD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

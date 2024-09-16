@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06544311-EFC9-C698-41AA-6FFF9B78D034" name="Proveedor">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>4F380888-D5A8-DF89-DF60-5A17AA5356EB</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_proveedor" id="E655AB1E-9C35-2045-7F5F-1A417D11D51B">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>E630E207-AC98-45A7-6EE2-827D40A4F02A</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombreProvedor" id="E394C563-6E0C-202A-EE01-FF6F3DC14A15">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>7258340D-7B76-8DA4-836A-2468CD701E8E</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccionProveedor" id="E0A66DC0-FC26-6C65-5A48-32A44413A98E">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>2350A773-1C22-C8F8-AB9D-779BEDBC9375</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correoProveedor" id="FDFF6B7E-8D17-8566-EF79-616F1DC83361">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>B11D7FAD-020F-D19B-97D1-DC6DF3AB916C</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numeroProveedor" id="21F50466-3A47-ECBC-8A9A-AE0C9A260CDD">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>9C4E4222-6820-18BC-9D9D-A2CB9EE7CA30</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA0B4EB1-928B-CAA1-803F-1274638661BF" name="Proveedor_PK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:20:30 UTC</createdTime>
+<generatorID>AD8F7E92-6354-1780-B934-97CB1D6A4B80</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E655AB1E-9C35-2045-7F5F-1A417D11D51B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

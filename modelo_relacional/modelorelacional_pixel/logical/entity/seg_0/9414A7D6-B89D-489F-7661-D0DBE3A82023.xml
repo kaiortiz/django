@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9414A7D6-B89D-489F-7661-D0DBE3A82023" name="Compra">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:05:58 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_compra" id="41EB7C7D-28B5-2FA5-EB85-BC187B0C79F7">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:06:19 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_venta" id="926FE22C-6CB9-37C7-B4C1-D2D34FA1208C">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:06:23 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora_venta" id="D7C44EE6-C362-3B94-0E40-74AE152507C0">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:13:54 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto_venta" id="0123F59D-D4CF-7755-ED9F-73B915ED6FDE">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:10:50 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad" id="BE388743-4EAB-7C9E-7CD0-29E513914B9D">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:32:16 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Correo" id="B8C760F9-D905-7111-7639-007AA181F359">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:34:10 UTC</createdTime>
+<generatorID>D0DA5A77-AE7D-339A-C3A1-3AC74A634B28</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5E07D863-35BE-C5C7-B6B7-52EDB90F87C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_compra1" id="BA9B7418-8D7D-3E88-8F09-AC36275A304D">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-16 02:24:46 UTC</createdTime>
+<generatorID>E325FB53-9628-C27A-D726-865974D0BAFD</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<referedAttribute>41EB7C7D-28B5-2FA5-EB85-BC187B0C79F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B44A4BA2-8220-0799-8C65-45B6397503F6" name="Compra PK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:06:26 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>41EB7C7D-28B5-2FA5-EB85-BC187B0C79F7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

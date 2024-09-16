@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="0E868054-2712-F675-D4CE-0DAE2F9BA9DC">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 00:58:04 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="BED4A39C-68C3-935D-0F8B-1C94EC453799" mainViewID="FF3718D2-5D58-2BA8-6281-9CDC3662C650">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 00:58:04 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

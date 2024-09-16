@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA9A3AD0-04A9-8EA1-A358-6C71711FBBD3" name="Juego">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 01:46:59 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_juego" id="C2E72CCF-F358-4557-A47F-89285662F3BA">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 01:47:05 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombreJuego" id="6C8EC431-F95A-19A2-581D-C2E1E938FD3B">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 01:47:58 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="2A277E31-B680-748C-C8EA-B65D75054ADF">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 01:55:33 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock" id="8A7C28AB-2F31-7AB9-2AA2-55BF61C0D422">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 02:00:59 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_categoria" id="971FCE91-ACA1-C73D-3321-BCAE9337B86A">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:09:10 UTC</createdTime>
+<generatorID>8ACEAE38-C67B-D01C-BF68-0BE385FE690A</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<referedAttribute>A3A405C2-CAB1-D3E6-7ED3-C4AE9744D61A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_consola" id="F35BF259-7B9F-0EA5-C043-54D8DE49967D">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:09:43 UTC</createdTime>
+<generatorID>D7804B6D-9281-D421-2682-C5C30BA731EE</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<referedAttribute>3EDF5600-1998-8BF0-403A-A09F523FC7A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_proveedor" id="624A8E40-E696-713A-11A7-B05C3ACD3E6B">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:10:05 UTC</createdTime>
+<generatorID>9A467C6C-A59F-426A-A182-2006EF0D6A6D</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<referedAttribute>E630E207-AC98-45A7-6EE2-827D40A4F02A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_compra" id="3E392C92-AB6D-D05F-AFA8-A63F50B2500A">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 03:12:04 UTC</createdTime>
+<generatorID>E325FB53-9628-C27A-D726-865974D0BAFD</generatorID>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="true"/>
+</engineerTo>
+<referedAttribute>41EB7C7D-28B5-2FA5-EB85-BC187B0C79F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9C44500F-5823-A822-2918-9F5704C23B39" name="Juego PK">
+<createdBy>KAI - SIRDOLL</createdBy>
+<createdTime>2024-09-15 01:47:35 UTC</createdTime>
+<ownerDesignName>modelorelacional_pixel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4865B4BD-87FC-9DD7-DCAC-541E28DBE597" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C2E72CCF-F358-4557-A47F-89285662F3BA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
