@@ -12,7 +12,11 @@ def index(request):
 
 
 def categoria(request):
-    return render (request, 'core/categoria.html')
+    categoria = Categoria.objects.all()
+    datos = {
+        'categoria': categoria
+    }
+    return render (request, 'core/categoria.html',datos)
 
 def cuenta(request):
     return render (request, 'core/cuenta.html')

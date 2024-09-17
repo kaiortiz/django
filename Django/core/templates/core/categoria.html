@@ -32,16 +32,16 @@
             </div>
         </div>
         
-        
+       
+
+
         <!--Categorías-->
         <div class="col-md-2">
           <h4>Categorías</h4>
           <ul class="list-untyled">
-            <li class="mb-3"><a href="">Acción</a></li>
-            <li class="mb-3"><a href="">Deporte</a></li>
-            <li class="mb-3"><a href="">Estrategía</a></li>
-            <li class="mb-3"><a href="">Mundo abierto</a></li>
-            <li class="mb-3"><a href="">Terror</a></li>
+            {% for ctg in categoria %}
+            <li class="mb-3"><a href="">{{ctg.nombreCategoria}}</a></li>
+            {% endfor %}
           </ul>
         </div>
         
