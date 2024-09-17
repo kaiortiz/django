@@ -60,12 +60,12 @@ class Compra(models.Model):
 class Cuenta(models.Model):
     nombre = models.CharField(max_length=20)
     apellidos = models.CharField(max_length=30)
-    nombreUsuario = models.CharField(max_length=20)
+    nameUser = models.CharField(max_length=20)
     correo = models.CharField(primary_key=True, max_length=30)
     clave = models.CharField(max_length=18)
-    fechaNac = models.DateField()
+    fecNacimiento = models.DateField()
     direccion = models.CharField(max_length=50)
-    id_compra = models.ForeignKey(Compra,on_delete=models.CASCADE)
+    #id_compra = models.ForeignKey(Compra,on_delete=models.CASCADE)
 
     def __str__(self) :
         return self.correo

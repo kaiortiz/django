@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Categoria
+from .forms import RegistroClienteForms
 
 # Create your views here.
 
@@ -19,7 +20,22 @@ def categoria(request):
     return render (request, 'core/categoria.html',datos)
 
 def cuenta(request):
-    return render (request, 'core/cuenta.html')
+    
+    if request.method == 'POST':
+        form = RegistroClienteForms(request.POST)
+        if form.is_valid():
+            form.save()
+            
+        return render (request, 'core/cuenta.html')
+    else:
+        form = RegistroClienteForms()
+        
+    contexto = {
+        'form': form,
+        'cliente': request.user
+    }
+    return render (request, 'core/cuenta.html', contexto)
+        
 
 def detailProduct(request):
     return render (request, 'core/detailProduct.html')
