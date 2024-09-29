@@ -131,3 +131,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#redirigir despuès de iniciar sesiòn
+LOGIN_REDIRECT_URL = '/'
+
+#REDIRIGIR despues de cerrar sesiòn
+LOGOUT_REDIRECT_URL = '/ingresar/'
+
+#rediriir si el usuario intenta acceder a una pàgina sin estar autorizado
+LOGIN_URL = '/ingresar/'

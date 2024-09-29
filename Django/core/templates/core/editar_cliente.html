@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex align-items-center">
+            <a href="{% url 'index' %}">   
+                <img src="{% static 'core/img/logo.jpg' %}" alt="logo" style="max-width: 80px; margin-right: 15px;">
+            </a>
+            <h1 class="mb-0">Bienvenido, {{ cliente.nombre }}</h1>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Editar Cliente</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="POST" action="{% url 'editar_cliente' cliente.id %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input class="form-control form-control-sm" type="text" id="nombre" name="nombre" aria-label=".form-control-sm example" value="{{ cliente.nombre }}">
+                              </div>
+                              <div class="form-group">
+                                <label for="Apellidos">Apellidos</label>
+                                <input class="form-control form-control-sm" type="text" id="apellidos" name="apellidos" aria-label=".form-control-sm example" value="{{ cliente.apellidos }}">
+                              </div>
+                              <div class="form-group">
+                                <label for="nameUser">Nombre de usuario</label>
+                                <input class="form-control form-control-sm" type="text" id="nameUser" name="nameUser" aria-label=".form-control-sm example" value="{{ cliente.nameuser }}">
+                              </div>
+                              <div class="form-group">
+                                <label for="correo">Correo electronico</label>
+                                <input type="email" class="form-control" id="correo" name="correo"  value="{{ cliente.correo }}">
+                              </div>
+                             <div class="form-group">
+                                <label for="fecNacimiento">Fecha de Nacimiento</label>
+                                <input type="date" id="fecNacimiento" name="fecNacimiento"  class="form-control" aria-describedby="passwordHelpInline" value="{{ cliente.fecNacimiento }}" >
+                              </div>
+                              <div class="form-group">
+                                <label for="direccion">Dirección de despacho</label>
+                                <input class="form-control form-control-sm" type="text" id="direccion" name="direccion" aria-label=".form-control-sm example" value="{{ cliente.direccion }}">
+                              </div>
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
+                            <a href="{% url 'listado_clientes_admin' %}" class="btn btn-secondary">Cancelar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center py-3" style="position: fixed; bottom: 0; width: 100%;">
+        <p>Sitio web de pruebas para taller de programación</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
