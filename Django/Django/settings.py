@@ -41,13 +41,15 @@ INSTALLED_APPS = [
     'rest_framework',
     'api_rest',
     'rest_framework.authtoken',
+
 ]
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES':[
-        'rest_framework.authentication.TokenAuthentication'
-    ]
-}
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}  
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -140,13 +142,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-#redirigir despuès de iniciar sesiòn
-LOGIN_REDIRECT_URL = '/'
-
-#REDIRIGIR despues de cerrar sesiòn
-LOGOUT_REDIRECT_URL = '/ingresar/'
-
-#rediriir si el usuario intenta acceder a una pàgina sin estar autorizado
-LOGIN_URL = '/ingresar/'

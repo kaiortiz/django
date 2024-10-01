@@ -1,25 +1,24 @@
 from rest_framework import serializers
-from core.models import Proveedor
-from core.models import Cuenta
+from core.models import Compra, Juegos
 
-
-class ProveedorSerializer(serializers.ModelSerializer):
+class CompraSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Proveedor
-        fields = '__all__' #traer todas las columnas
+        model = Compra
+        fields = '__all__' #traer todos las columnas de la BD
 
-class ProveedorPostSerializer(serializers.ModelSerializer):
+class CompraPostSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Proveedor
-        fields = '__all__'
-
-
-class CuentaSerializer(serializers.ModelSerializer):
+        model = Compra
+        fields = ['id_compra','fecha_venta','hora_venta','monto_venta','cantidad','id_juego']
+        
+        
+class JuegoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Cuenta
-        fields = '__all__' #traer todas las columnas
+        model = Juegos
+        fields = '__all__' #traer todos las columnas de la BD
 
-class CuentaPostSerializer(serializers.ModelSerializer):
+class JuegoPostSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Cuenta
-        fields = '__all__'
+        model = Juegos
+        fields = ['id_juego','nombreJuego','precio','stock','id_categoria','id_consola','id_proveedor']
+        

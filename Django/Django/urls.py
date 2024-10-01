@@ -23,4 +23,5 @@ urlpatterns = [
     path('', include('core.urls')),
     path('api/', include('api_rest.urls')),
     path('loginApi/',loginApi,name='loginApi'),
+    
 ]

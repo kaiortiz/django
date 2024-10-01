@@ -1,39 +1,65 @@
 from django.shortcuts import render
-from django.http import JsonResponse
-
-# Create your views here.
-
-# Construcción de Rest
+## Construcciòn de Rest
 from rest_framework.response import Response
-#Construcción función a vista
+## Contrucciòn de de funciòn a vista
 from rest_framework.decorators import api_view
-# Seguridad eliminada
+## Seguridad eliminada
 from django.views.decorators.csrf import csrf_exempt
-# Importación formato Json
+##importaciòn formato Json
 from rest_framework.parsers import JSONParser
-# Importación de código status
+##importaciòn de còdigo estatus
 from rest_framework import status
-# Importación de librería que  muestra mensaje not found 404
-from django.shortcuts import get_list_or_404
 
-from core.models import Proveedor
-from .serializers import ProveedorSerializer, ProveedorPostSerializer
-from core.models import Cuenta
-from .serializers import CuentaSerializer, CuentaPostSerializer
+from core.models import  Compra, Juegos
+from .serializers import CompraSerializer,CompraPostSerializer, JuegoSerializer, JuegoPostSerializer
+
+#Activar autenticaciòn
+from rest_framework.decorators import permission_classes
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 
-@crsf_exempt
-@api_view(['GET', 'POST'])
-@permisson_classes((IsAuthenticated,))
-def lista_proveedor(request):
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.parsers import JSONParser
+from django.shortcuts import get_object_or_404
+
+
+
+@csrf_exempt
+@api_view(['GET','POST'])
+#@permission_classes((IsAuthenticated,))
+def lista_Compras(request):
     if request.method == 'GET':
-        proveedor = Proveedor.objects.all()
-        serializer = ProveedorSerializer(proveedor, many=True)
+        compra = Compra.objects.all()
+        serializer = CompraSerializer(compra, many=True)
 
         return Response(serializer.data)
     elif request.method == 'POST':
         data = JSONParser().parse(request)
-        serializer = ProveedorPostSerializer()
+        serializer = CompraPostSerializer(data=data)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status.HTTP_201_CREATED)
+        else:
+            print('error', serializer.errors)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@csrf_exempt
+@api_view(['GET','POST'])
+#@permission_classes((IsAuthenticated,))
+        
+def lista_Juegos(request):
+    if request.method == 'GET':
+        juego = Juegos.objects.all()
+        serializer = JuegoSerializer(juego, many=True)
+
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = JuegoPostSerializer(data=data)
 
         if serializer.is_valid():
             serializer.save()
@@ -42,24 +68,3 @@ def lista_proveedor(request):
             print('error', serializer.errors)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
-
-
-@crsf_exempt
-@api_view(['GET', 'POST'])
-@permisson_classes((IsAuthenticated,))
-def lista_cuenta(request):
-    if request.method == 'GET':
-        proveedor = Cuenta.objects.all()
-        serializer = CuentaSerializer(proveedor, many=True)
-
-        return Response(serializer.data)
-    elif request.method == 'POST':
-        data = JSONParser().parse(request)
-        serializer = CuentaPostSerializer()
-
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status.HTTP_201_CREATED)
-        else:
-            print('error', serializer.errors)
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
