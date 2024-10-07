@@ -11,9 +11,7 @@
 </head>
 <body>
   <header>
-    <div class="linkHeader">
-      <a href="{%  url 'cuenta' %}" > Registrarse</a> | <a href="{%  url 'ingresar' %}" > Iniciar sesión</a>
-    </div>
+    
     <div class="float-start">
       <a href="{%  url 'index' %}"> <img src="{% static 'core/img/logo2.png'%}" width="300" height="65" > </a>
     </div><br>
@@ -23,35 +21,25 @@
     <a href="{%  url 'categoria' %}" class="btn btn-outline-primary">Nintendo</a>
   </header>
 
-    <div class="container mt-5">
-      <div class="row">
-        <!--Formulario-->
-        
-        <div class="col-mb-8">
-          <div class="formulario">
-            <form action="" method="post">
-              <h4>Inicia sesión en Pixelverse</h4><br>
-             
-              <div class="form-group">
-                <label for="correo">Correo electronico</label>
-                <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com">
-              </div>
-              <div class="form-group">
-                <label for="clave">Contraseña</label>
-                <input type="password" id="clave" name="clave"  class="form-control" aria-describedby="passwordHelpInline" onfocusout="habilitaTxtClave()">
-                
-              </div>
-              <input type="button" name="btnRegistro" class="btn btn-success" value="Ingresar" onclick="validaCuenta()">
-                
-              <br><br><b><a href="{%  url 'recuperarClave' %}" > ¿Olvidaste tu contraseña?</a></b></a>
-
-            </form>
-          </div>
-        </div>        
-
-        
-      </div>
-    </div>  
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Iniciar sesión</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Formulario de inicio de sesión -->
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
       
 

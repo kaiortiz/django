@@ -89,7 +89,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': 'xe',  # Solo el nombre de la base de datos
-        'USER': 'PYXELVERSE',
+        'USER': 'PYXELVERSE5',
         'PASSWORD': 'pixelverse123',
         'HOST': 'localhost',
         'PORT': '1521',
@@ -142,3 +142,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Redirigir después de iniciar sesión
+LOGIN_REDIRECT_URL = '/'
+
+# Redirigir después de cerrar sesión
+LOGOUT_REDIRECT_URL = '/login/'
+
+# Redirigir si el usuario intenta acceder a una página sin estar autenticado
+LOGIN_URL = '/login/'

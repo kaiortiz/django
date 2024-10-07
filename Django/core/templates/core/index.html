@@ -14,8 +14,33 @@
 <body>
     <header>
       <div class="linkHeader">
-        <a href="{%  url 'cuenta' %}" > Registrarse</a> | <a href="{%  url 'ingresar' %}" > Iniciar sesión</a>
+        <div>
+          <div class="btn btn-success">
+            <a href="{%  url 'cuenta' %}" > Registrarse</a> 
+          </div>
+          {% if user.is_authenticated %}
+              <!-- Botón para cerrar sesión -->
+              <form method="POST" action="{% url 'logout' %}" style="display:inline;">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-danger">Cerrar sesión</button>
+              </form>
+      
+              <!-- Condición para superusuario -->
+              {% if user.is_superuser %}               
+                  <a href="{% url 'listado_clientes_admin' %}" class="btn btn-secondary">Administracion</a>
+              <!-- Condición para usuarios del staff -->
+              {% elif user.is_staff %}
+                  <a href="{% url 'lista_clientes' %}" class="btn btn-primary">Listar los clientes</a>
+              {% endif %}
+          {% else %}
+              <!-- Botón para iniciar sesión -->
+              <a href="{% url 'login' %}" class="btn btn-primary">Iniciar sesión</a>
+          {% endif %}
+        </div>   
       </div>
+      <!-- Botón de iniciar/cerrar sesión alineado a la derecha -->
+         
+         
       <div class="float-start"><img src="{% static 'core/img/logo2.png'%}" width="300" height="65" > </div><br>
       <a href="{%  url 'categoria' %}" class="btn btn-outline-primary">PC</a>
       <a href="{%  url 'categoria' %}" class="btn btn-outline-primary">PlayStation</a>

@@ -56,16 +56,15 @@ class Compra(models.Model):
     def __str__(self) :
         return self.id_compra
     
-#MODELO PARA CUENTAS DE USUARIO CLIENTE    
-class Cuenta(models.Model):
+#MODELO PARA CUENTAS DE USUARIO CLIENTE        
+class Cliente(models.Model):
     nombre = models.CharField(max_length=20)
     apellidos = models.CharField(max_length=30)
     nameUser = models.CharField(max_length=20)
-    correo = models.CharField(primary_key=True, max_length=30)
+    correo = models.EmailField()
     clave = models.CharField(max_length=18)
     fecNacimiento = models.DateField()
     direccion = models.CharField(max_length=50)
-    #id_compra = models.ForeignKey(Compra,on_delete=models.CASCADE)
 
     def __str__(self) :
-        return self.correo
+        return self.nombre

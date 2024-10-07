@@ -11,9 +11,7 @@
 </head>
 <body>
   <header>
-    <div class="linkHeader">
-      <a href="{%  url 'cuenta' %}" > Registrarse</a> | <a href="{%  url 'ingresar' %}" > Iniciar sesión</a>
-    </div>
+    
     <div class="float-start">
       <a href="{%  url 'index' %}"> <img src="{% static 'core/img/logo2.png'%}" width="300" height="65" > </a>
     </div><br>
@@ -70,7 +68,7 @@
                 <button type="submit" class="btn btn-success">Registrar</button>
                 <input type="button" name="btnLimpiar"  class="btn btn-primary" onclick="limpiar()" value="Limpiar formulario">
                 
-                <br><br><b>¿Ya tienes cuenta?  <a href="{%  url 'ingresar' %}" > Inicia sesión</b></a>
+                <br><br><b>¿Ya tienes cuenta?  <a href="{%  url 'login' %}" > Inicia sesión</b></a>
 
             </form>
           </div>
